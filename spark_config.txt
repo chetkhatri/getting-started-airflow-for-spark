@@ -1,0 +1,12 @@
+[SPARK_CONFIG]
+jobs_location = /home/spark/apps/
+data_validation_check = /home/spark/datavalidation/apps/
+spark_submit_command = "sh /usr/hdp/2.6.5.0-292/spark2/bin/spark-submit --master yarn --deploy-mode cluster --conf spark.dynamicAllocation.executorAllocationRatio=1 --conf spark.executor.heartbeatInterval=30s --conf spark.dynamicAllocation.executorIdleTimeout=60s --conf spark.dynamicAllocation.sustainedSchedulerBacklogTimeout=15s --conf spark.network.timeout=800s  --conf spark.dynamicAllocation.schedulerBacklogTimeout=15s --conf spark.yarn.maxAppAttempts=1 --conf spark.shuffle.service.enabled=true  --files /home/spark/env/type.conf"
+airflow_dags_path = /usr/local/airflow/dags/
+spark_home = /usr/hdp/2.6.5.0-292/spark2/
+spark_bin = /usr/hdp/2.6.5.0-292/spark2/bin
+hdfc_history_flag_path = /nextgen-data-platform/retail/historic-data/
+sqlcmd_path = /opt/mssql-tools/bin
+[DATABASE_CONFIG]
+schema_name = nextgen_retail
+is_change_track = Y

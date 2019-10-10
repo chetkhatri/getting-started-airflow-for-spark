@@ -1,0 +1,23 @@
+[dev]
+database_server = dev.pycon.za
+username = blxTaGFHfnhtJiQzQy86OQ==
+password = JiZLOCcvblB3UU1cS0gsSg==
+passphrase = JiZLOCcvblB3UU1cS0gsSkVMJmZVNSFVLFhcVHdCX1k=
+
+[qa]
+database_server = qa.pycon.za
+username = NH5ncURKfVEnLT43cDZbOQ== 
+password = cGFSaCJgeGFlZXNwNTpTNw== 
+passphrase = cGFSaCVqOEpSYjwmeFZrOjInNzsiYHhhZWVzcDU6Uzc=
+
+[performance]
+database_server = perf.pycon.za
+username = ezk0flF6bnBfekNjSzwsJQ==
+password = a1IvZ3d6eTZoXC1TTCVGOA==
+passphrase = N0VbUnduVlYzKkFxIzpqTmtSLzpqU0wlRjg=
+
+[prod]
+database_server = prod.pycon.za
+username = UG5mQ11YS01GSzM0ZWFXNw==
+password = S3NlV3RISHY7OTRjRVVYNg==
+passphrase = Q1pEMnc/ez5feVx6TjZFKCMhYUFjJ01wZV42cG41eCI=

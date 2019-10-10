@@ -1,0 +1,225 @@
+{
+	"medium": {
+		"historical_load_item": {
+			    "driver_memory": "4g",
+			    "executor_memory": "4g",
+      			"num_executors": 1,
+      			"minExecutors": 1,
+      			"maxExecutors": 4,
+      			"executor_cores": 4,
+      			"dynamicAllocation": true
+		},
+		"historical_load_outlet": {
+			    "driver_memory": "4g",
+                            "executor_memory": "4g",
+                            "num_executors": 1,
+                            "minExecutors": 1,
+                            "maxExecutors": 4,
+                            "executor_cores": 4,
+                            "dynamicAllocation": true
+		},
+		"historical_load_transactions": {
+			    "driver_memory": "4g",
+                            "executor_memory": "4g",
+                            "num_executors": 1,
+                            "minExecutors": 1,
+                            "maxExecutors": 4,
+                            "executor_cores": 4,
+                            "dynamicAllocation": true
+		},
+		"historical_load_organization": {
+			    "driver_memory": "4g",
+                            "executor_memory": "4g",
+                            "num_executors": 1,
+                            "minExecutors": 1,
+                            "maxExecutors": 4,
+                            "executor_cores": 4,
+                            "dynamicAllocation": true
+		},
+		"transaction_line_item": {
+			    "driver_memory": "4g",
+                            "executor_memory": "4g",
+                            "num_executors": 1,
+                            "minExecutors": 1,
+                            "maxExecutors": 4,
+                            "executor_cores": 4,
+                            "dynamicAllocation": true
+		},
+		"transaction_by_date": {
+			    "driver_memory": "4g",
+                            "executor_memory": "4g",
+                            "num_executors": 1,
+                            "minExecutors": 1,
+                            "maxExecutors": 4,
+                            "executor_cores": 4,
+                            "dynamicAllocation": true
+		},
+		"outlets_by_date": {
+			    "driver_memory": "4g",
+                            "executor_memory": "4g",
+                            "num_executors": 1,
+                            "minExecutors": 1,
+                            "maxExecutors": 4,
+                            "executor_cores": 4,
+                            "dynamicAllocation": true
+		},
+		"items_by_date": {
+			    "driver_memory": "4g",
+                            "executor_memory": "4g",
+                            "num_executors": 1,
+                            "minExecutors": 1,
+                            "maxExecutors": 4,
+                            "executor_cores": 4,
+                            "dynamicAllocation": true
+		}
+    },
+    "small": {
+		"historical_load_item": {
+			    "driver_memory": "4g",
+			    "executor_memory": "4g",
+      			    "num_executors": 1,
+      			    "minExecutors": 1,
+      			    "maxExecutors": 4,
+      			    "executor_cores": 4,
+      			    "dynamicAllocation": true
+		},
+		"historical_load_outlet": {
+			    "driver_memory": "4g",
+                            "executor_memory": "4g",
+                            "num_executors": 1,
+                            "minExecutors": 1,
+                            "maxExecutors": 4,
+                            "executor_cores": 4,
+                            "dynamicAllocation": true
+		},
+		"historical_load_transactions": {
+			    "driver_memory": "4g",
+                            "executor_memory": "4g",
+                            "num_executors": 1,
+                            "minExecutors": 1,
+                            "maxExecutors": 4,
+                            "executor_cores": 4,
+                            "dynamicAllocation": true
+		},
+		"historical_load_organization": {
+			    "driver_memory": "4g",
+                            "executor_memory": "4g",
+                            "num_executors": 1,
+                            "minExecutors": 1,
+                            "maxExecutors": 4,
+                            "executor_cores": 4,
+                            "dynamicAllocation": true
+		},
+		"transaction_line_item": {
+			    "driver_memory": "4g",
+                            "executor_memory": "4g",
+                            "num_executors": 1,
+                            "minExecutors": 1,
+                            "maxExecutors": 4,
+                            "executor_cores": 4,
+                            "dynamicAllocation": true
+		},
+		"transaction_by_date": {
+			    "driver_memory": "4g",
+                            "executor_memory": "4g",
+                            "num_executors": 1,
+                            "minExecutors": 1,
+                            "maxExecutors": 4,
+                            "executor_cores": 4,
+                            "dynamicAllocation": true
+		},
+		"outlets_by_date": {
+			    "driver_memory": "4g",
+                            "executor_memory": "4g",
+                            "num_executors": 1,
+                            "minExecutors": 1,
+                            "maxExecutors": 4,
+                            "executor_cores": 4,
+                            "dynamicAllocation": true
+		},
+		"items_by_date": {
+			    "driver_memory": "4g",
+                            "executor_memory": "4g",
+                            "num_executors": 1,
+                            "minExecutors": 1,
+                            "maxExecutors": 4,
+                            "executor_cores": 4,
+                            "dynamicAllocation": true
+		}
+    },
+    "large": {
+		"historical_load_item": {
+			    "driver_memory": "6g",
+			    "executor_memory": "18g",
+      			    "num_executors": 3,
+      			    "minExecutors": 3,
+      			    "maxExecutors": 6,
+      			    "executor_cores": 6,
+      			    "dynamicAllocation": true
+		},
+		"historical_load_outlet": {
+            "driver_memory": "6g",
+            "executor_memory": "18g",
+                  "num_executors": 3,
+                  "minExecutors": 3,
+                  "maxExecutors": 6,
+                  "executor_cores": 6,
+                  "dynamicAllocation": true
+		},
+		"historical_load_transactions": {
+            "driver_memory": "6g",
+            "executor_memory": "18g",
+                  "num_executors": 3,
+                  "minExecutors": 3,
+                  "maxExecutors": 6,
+                  "executor_cores": 6,
+                  "dynamicAllocation": true
+		},
+		"historical_load_organization": {
+            "driver_memory": "6g",
+            "executor_memory": "18g",
+                  "num_executors": 3,
+                  "minExecutors": 3,
+                  "maxExecutors": 6,
+                  "executor_cores": 6,
+                  "dynamicAllocation": true
+		},
+		"transaction_line_item": {
+            "driver_memory": "6g",
+            "executor_memory": "18g",
+                  "num_executors": 3,
+                  "minExecutors": 3,
+                  "maxExecutors": 6,
+                  "executor_cores": 6,
+                  "dynamicAllocation": true
+		},
+		"transaction_by_date": {
+            "driver_memory": "6g",
+            "executor_memory": "18g",
+                  "num_executors": 3,
+                  "minExecutors": 3,
+                  "maxExecutors": 6,
+                  "executor_cores": 6,
+                  "dynamicAllocation": true
+		},
+		"outlets_by_date": {
+            "driver_memory": "6g",
+            "executor_memory": "18g",
+                  "num_executors": 3,
+                  "minExecutors": 3,
+                  "maxExecutors": 6,
+                  "executor_cores": 6,
+                  "dynamicAllocation": true
+		},
+		"items_by_date": {
+            "driver_memory": "6g",
+            "executor_memory": "18g",
+                  "num_executors": 3,
+                  "minExecutors": 3,
+                  "maxExecutors": 6,
+                  "executor_cores": 6,
+                  "dynamicAllocation": true
+		}
+	}
+}
+	
