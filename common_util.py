@@ -5,7 +5,8 @@ import sys
 from airflow.contrib.operators.spark_submit_operator import SparkSubmitOperator
 from airflow.operators.bash_operator import BashOperator
 
-APPLICATION_JAR = 'nextgen-data-platform-retail.jar'
+APPLICATION_JAR = "nextgen-data-platform-retail.jar"
+
 
 def get_config_values(env_type):
     config = configparser.RawConfigParser()
@@ -29,7 +30,7 @@ def get_config_values(env_type):
     SPARK_HOME = config.get("SPARK_CONFIG", "spark_home")
     SPARK_BIN = config.get("SPARK_CONFIG", "spark_bin")
     HDFC_HISTORY_FLAG_PATH = config.get("SPARK_CONFIG", "hdfc_history_flag_path")
-    SQLCMD_PATH = config.get("SPARK_CONFIG", 'sqlcmd_path')
+    SQLCMD_PATH = config.get("SPARK_CONFIG", "sqlcmd_path")
     config_dict = {
         "database_server": DATABASE_SERVER,
         "username": USERNAME,
@@ -44,7 +45,7 @@ def get_config_values(env_type):
         "spark_home": SPARK_HOME,
         "spark_bin": SPARK_BIN,
         "hdfc_history_flag_path": HDFC_HISTORY_FLAG_PATH,
-        "sqlcmd_path": SQLCMD_PATH
+        "sqlcmd_path": SQLCMD_PATH,
     }
 
     return config_dict
@@ -104,7 +105,8 @@ def bash_operator_for_spark_submit(
     retail_id,
     schema_name,
     env_type,
-    trigger_rule="all_success"):
+    trigger_rule="all_success",
+):
     operator = BashOperator(
         task_id=spark_class_name,
         bash_command=" {{ params.spark_submit }} "
@@ -145,7 +147,7 @@ def bash_operator_for_spark_submit(
         + " "
         + schema_name,
         params={
-            "spark_submit": get_config_values(env_type)['spark_submit_command'],
+            "spark_submit": get_config_values(env_type)["spark_submit_command"],
             "class_name": class_path + spark_class_name,
             "job_name": spark_class_name,
             "spark_class_name": spark_class_name,
@@ -158,10 +160,11 @@ def bash_operator_for_spark_submit(
     )
     return operator
 
+
 def execute_unix_command(args_list):
     import subprocess
+
     proc = subprocess.Popen(args_list, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     output, error = proc.communicate()
     response_code = proc.returncode
     return response_code, output, error
-
